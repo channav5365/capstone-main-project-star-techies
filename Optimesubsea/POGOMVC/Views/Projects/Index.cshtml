@@ -1,0 +1,82 @@
+﻿@model IEnumerable<POGOMVC.Models.ProjectModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (BaseSessionModel.UserRole == "Admin")
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectEndDate)
+            </th>
+            @if (BaseSessionModel.UserRole != "Admin")
+            {
+                <th>
+                    Role
+                </th>
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectStartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProjectEndDate)
+                </td>
+                @if (BaseSessionModel.UserRole != "Admin")
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AssignedRoleToProject)
+                    </td>
+                }
+                <td>
+                    <a asp-action="ViewGraph" asp-route-id="@item.Id">View Graph</a><label>|</label>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    @if (item.AssignedRoleToProject == "Super User" || BaseSessionModel.UserRole == "Admin")
+                    {
+                        
+                        <label>|</label><a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }
+                    @if (BaseSessionModel.UserRole == "Admin")
+                    {                        
+@*                        <label>|</label> <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+*@                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

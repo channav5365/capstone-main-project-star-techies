@@ -1,0 +1,72 @@
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll
+E:\Project Concept\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+E:\Project Concept\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+E:\Project Concept\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+E:\Project Concept\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol04032023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll
+E:\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+E:\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+E:\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+E:\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+H:\Project-Details\BLN\POGOSol12thApril2023\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.deps.json
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.dll
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\bin\Debug\net6.0\EncryptDecrypt.pdb
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.AssemblyReference.cache
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfoInputs.cache
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.AssemblyInfo.cs
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.csproj.CoreCompileInputs.cache
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.dll
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\refint\EncryptDecrypt.dll
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\EncryptDecrypt.pdb
+D:\Courses\Capstone Project\Code\V1\Week 9\POGOSol\EncryptDecrypt\obj\Debug\net6.0\ref\EncryptDecrypt.dll

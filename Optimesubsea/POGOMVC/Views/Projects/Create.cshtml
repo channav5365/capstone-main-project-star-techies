@@ -1,0 +1,126 @@
+﻿@model POGOMVC.Models.ProjectModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ProjectModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input asp-for="ProjectName" class="form-control" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectDescription" class="control-label"></label>
+                <input asp-for="ProjectDescription" class="form-control" />
+                <span asp-validation-for="ProjectDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectStartDate" class="control-label"></label>
+                <input asp-for="ProjectStartDate" class="form-control" />
+                <span asp-validation-for="ProjectStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectEndDate" class="control-label"></label>
+                <input asp-for="ProjectEndDate" class="form-control" />
+                <span asp-validation-for="ProjectEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectType" class="control-label"></label>
+                <input asp-for="ProjectType" class="form-control" />
+                <span asp-validation-for="ProjectType" class="text-danger"></span>
+            </div>
+            
+            @if (BaseSessionModel.UserRole == "Admin")
+            {
+                <div class="form-group">
+                    <label class="control-label">Select Super User</label><br />
+                    <select asp-items="Model.SuperUsers" asp-for="SuperUserId" id="SuperUserId">
+                        <option value="0">--Select Super User--</option>
+                    </select>
+                    <span asp-validation-for="SuperUserId" class="text-danger"></span>
+                </div>
+            }
+            <div class="form-group">                
+                <label>Select Users</label>
+                @Html.ListBoxFor(model => model.EndUserIds, new MultiSelectList(Model.EndUsers,"Value","Text"), new {@class="form-control", multiple="multiple",id="lstEndusers"})
+                <span asp-validation-for="EndUserIds" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Select User to upload Data</label><br />
+                <select asp-items="Model.SelectedEndUser" asp-for="UploadDataEndUserId" id="UploadDataEndUserId">
+                    <option value="0">--Select User to upload Data--</option>
+                </select>                
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script src="~/jquery-ui.min.js"></script>
+    <script>
+        $("#SuperUserId").on("change", function () {
+            $list = $("#lstEndusers");
+            $.ajax({
+                url: "/Projects/GetEndUsersList",
+                type: "GET",
+                data: { projectId: @Model.Id, id: parseInt($("#SuperUserId").val()) },
+                traditional: true,
+                success: function (result) {
+                    console.log(result);
+                    $("#lstEndusers").empty();
+
+                    $.each(result, function (i, item) {
+
+                        $("#lstEndusers").append('<option value = ' + item.id + '>' + item.userName + '</option>')
+                    })
+                },
+                error: function (ex) {
+                    alert("Something went wrong");
+                }
+            });
+        });
+
+        $("#lstEndusers").on("change", function () {
+            debugger;
+
+            var ids = $("#lstEndusers").val();
+            debugger;
+            $list = $("#UploadDataEndUserId");
+            $.ajax({
+                url: "/Projects/GetSelectedEndUsersList",
+                type: "GET",
+                data: { projectId: @Model.Id, id: ids },
+                traditional: true,
+                success: function (result) {
+                    console.log(result);
+                    $("#UploadDataEndUserId").empty();
+                    $("#UploadDataEndUserId").append('<option value="0">--Select User to upload Data--</option>')
+                    $.each(result, function (i, item) {
+
+                        $("#UploadDataEndUserId").append('<option value = ' + item.value + '>' + item.text + '</option>')
+                    })
+                },
+                error: function (ex) {
+                    alert("Something went wrong");
+                }
+            });
+        });
+    </script>
+}

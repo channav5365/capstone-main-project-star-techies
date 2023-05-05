@@ -1,0 +1,167 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form asp-controller="DataFileUpload" asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" /> <hr /> <button type="submit">Upload</button>
+    <a asp-action="DownloadCSV" asp-controller="DataFileUpload">Download CSV</a>
+</form>
+
+@model BarChart
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h4 class="display-4">Bar Chart</h4>
+   
+    <div class="card">
+        <div class="card-header">
+            <div class="chart">
+                <canvas id="barchart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script>
+    var barCanvas = document.getElementById("barchart");
+    var labelsSet = new Array();
+    var Key2 = [];//these are all javascript array variables
+    var Key3 = [];
+    var Key4 = [];
+    var Key5 = [];
+    var Key6 = [];
+    var Chemistry = [];
+    var Biology = [];
+    var Mathematics = [];
+    var dtStr = '';
+
+    @if (Model.XAxis.Length > 0)
+    {
+        foreach (var item in Model.XAxis)
+        {
+            if (item != null)
+            {
+                string _month = item.ToString("MM");
+                string _year = item.ToString("yyyy");
+                string _date = item.ToString("dd");
+                string _hours = item.ToString("HH");
+                string _mins = item.ToString("mm");
+                string _second = item.ToString("ss");
+
+                @:var date = new Date(parseInt(@_year),parseInt(@_month),parseInt(@_date),parseInt(@_hours),parseInt(@_mins),parseInt(@_second))
+                
+                @:console.log('dtStr' + date);
+                @:labelsSet.push(date)
+            }
+            
+        }
+        
+    }
+    @if (Model.Key2.Count > 0)
+    {
+        foreach (var item in Model.Key2)
+        {
+            @:Key2.push(@item.FloatValue);
+
+        }
+    }
+    @if (Model.Key3.Count > 0)
+    {
+        foreach (var item in Model.Key3)
+        {
+            @:Key3.push(@item.FloatValue);
+
+        }
+    }
+    @if (Model.Key4.Count > 0)
+    {
+        foreach (var item in Model.Key4)
+        {
+            @:Key4.push(@item.FloatValue);
+
+        }
+    }
+    @if (Model.Key5.Count > 0)
+    {
+        foreach (var item in Model.Key5)
+        {
+            @:Key5.push(@item.FloatValue);
+
+        }
+    }
+    @if (Model.Key6.Count > 0)
+    {
+        foreach (var item in Model.Key6)
+        {
+            @:Key6.push(@item.FloatValue);
+
+        }
+    }
+    
+    var Key2 = {
+        label: 'Key2',
+        data: Key2,
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderWidth: 0,
+        lineTension: 0,
+    };
+    var Key3 = {
+        label: 'Key3',
+        data: Key3,
+        backgroundColor: 'rgb(54, 162, 235)',
+        borderWidth: 0,
+    };
+    var Key4 = {
+        label: 'Key4',
+        data: Key4,
+        backgroundColor: 'rgb(157, 230, 41)',
+        borderWidth: 0,
+    };
+    var Key5 = {
+        label: 'Key5',
+        data: Key5,
+        backgroundColor: 'rgb(41, 224, 230)',
+        borderWidth: 0,
+    };
+    var Key6 = {
+        label: 'Key6',
+        data: Key6,
+        backgroundColor: 'rgb(41, 99, 230)',
+        borderWidth: 0,
+    };
+    var datasetvalues = {
+        labels: labelsSet, //labels: ["John", "Mary", "Asha", "Emily", "Bonnie"],//x-axis label values
+        datasets: [Key2, Key3, Key4, Key5, Key6]//y-axis
+    };
+    var chartOptions = {
+        scales: {
+            xAxes: [{
+                barPercentage: 1,//Percent (0-1) of the available width each bar should
+                categoryPercentage: 0.6,//Percent (0-1) of the available width each category
+            }],
+            yAxes: [{
+                barPercentage: 1,
+                categoryPercentage: 0.6,
+                ticks: {
+                    beginAtZero: true,
+                    //steps: 10,
+                    //stepValue: 5,
+                    //max: 200
+                }
+            }],
+        }
+    };
+    var barChart = new Chart(barCanvas, {
+        type: 'line',
+        data: datasetvalues,
+        options: chartOptions
+    });
+</script>
+
